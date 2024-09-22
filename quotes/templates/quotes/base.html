@@ -1,0 +1,25 @@
+{% load static %}
+<html>
+    <head>
+        <title>Quotes</title>
+        <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+        <link rel="stylesheet" href="{% static 'styles.css' %}">
+    </head>
+    <body>
+
+    <nav>
+        <ul>
+            <a href="{% url 'quote' %}">Quote of the day</a>
+            <a href="{% url 'about' %}">About</a>
+            <a href="{% url 'show_all' %}">Show All</a>
+        </ul>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+
+    <hr>
+    Page created by raquelgr@bu.edu <br>
+    This page was generated at {{current_time}}.
+    </body>
+</html>
