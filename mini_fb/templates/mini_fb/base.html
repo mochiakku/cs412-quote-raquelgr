@@ -1,0 +1,21 @@
+{% load static %}
+<html>
+    <head>
+        <title>Grey's Anatomy Facebook
+        </title>
+        <!-- <link rel="stylesheet" href="/static/styles.css"> -->
+        <link rel="stylesheet" href="{% static 'styles3.css' %}">
+    </head>
+    <body>
+
+    <nav>
+            <a href="{% url 'show_all_profiles' %}">Main Page</a>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+    <footer>
+        <p>Seattle Grace Memorial</p>
+    </footer>
+    </body>
+</html>
