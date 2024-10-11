@@ -1,3 +1,7 @@
+<!-- # File: base.html
+# Author: Raquel Gonzalez, raquelgr@bu.edu
+# Description: base file for the mini_fb website -->
+
 {% load static %}
 <html>
     <head>
@@ -10,12 +14,14 @@
 
     <nav>
             <a href="{% url 'show_all_profiles' %}">Main Page</a>
+            <a href="{% url 'create_profile' %}">Create New Profile</a>
+
     </nav>
 
     {% block content %}
     {% endblock %}
     <footer>
-        <p>Seattle Grace Memorial</p>
+        <p>Seattle Grace Hospital</p>
     </footer>
     </body>
 </html>

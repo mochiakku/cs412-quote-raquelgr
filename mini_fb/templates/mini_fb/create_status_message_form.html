@@ -1,0 +1,14 @@
+<!-- # File: create_status_message_form.html
+# Author: Raquel Gonzalez raquelgr@bu.edu
+# Description: html to display the page where users can submit/create a status message -->
+
+{% extends 'mini_fb/base.html' %}
+
+{% block content %}
+    <h2>Create Status Message for {{ profile.firstName }} {{ profile.lastName }}</h2>
+    <form method="POST">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+{% endblock %}
