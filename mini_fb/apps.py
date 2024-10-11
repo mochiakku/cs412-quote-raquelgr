@@ -1,6 +1,3 @@
-# File: apps.py
-# Author: Raquel Gonzalez raquelgr@bu.edu
-
 from django.apps import AppConfig
 
 
